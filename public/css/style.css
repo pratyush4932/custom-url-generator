@@ -1,47 +1,83 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'DM Mono', monospace;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: antiquewhite;
+    background-image: url('../assets/background.png');
+    background-size: 100vw 100vh;
+    background-clip: content-box;
+    background-repeat: no-repeat;
 }
 
 h1 {
     text-align: center;
+    margin-top: 15vh;
+    color: #0025bb;
+}
+
+.underText{
+    text-align: center;
+    margin: 0 auto;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: 20px;
+    color: #002190;
 }
 
 .form-section {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
+    flex-direction: column;
+    max-width: 60vw;
+    margin: 5vh auto 0 auto;
 }
 
 .input-area {
     margin-bottom: 15px;
+    width: 100%;
+}
+
+input{
+    width: 98%;
+    padding: 1%;
+}
+
+.inputBox[type="text"] {
+    font-family: 'DM Mono', monospace;
+    font-size: 20px;
+    width: 100%;
+}
+
+input[type="text"]{
+    font-family: 'DM Mono', monospace;
+    font-size: 16px;
 }
 
 input[type="text"] {
-    width: 100%;
-    padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
-
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
 button{
-    width: 25%;
+    width: 40vw;
+    min-width: 200px;
     height: auto;
     padding: 16px;
     border: none;
     border-radius: 5px;
-    background-color: #007bff;
+    background-color: #0025bb;
+    font-family: "DM Mono", monospace;
     color: #fff;
     cursor: pointer;
     display: block;
-    margin: auto;
 }
 
 .result-section {
-    max-width: 600px;
+    max-width: 100%;
+    width: 70vw;
     margin: 20px auto;
     padding: 20px;
     border: 1px solid #ccc;
