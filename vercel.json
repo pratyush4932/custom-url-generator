@@ -1,18 +1,13 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "app.js", // Assuming your Express server file is named server.js
-      "use": "@vercel/node" // Using Vercel's Node.js runtime
-    }
-  ],
+  "builds": [{
+    "src": "./app.js",
+    "use": "@vercel/node"
+  }],
   "routes": [
     {
-      "src": "/(.*)",
-      "dest": "app.js" // Serving all routes through the Express server
+      "src": "/.*",
+      "dest": "/"
     }
-  ],
-  "env": {
-    "NODE_ENV": "production" // Setting NODE_ENV to production
-  }
+  ]
 }
